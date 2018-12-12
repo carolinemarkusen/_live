@@ -577,7 +577,7 @@ link:hover{
   justify-content: center;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1280px) {
   .footer_container{
     padding: 50px 5%;
   }
