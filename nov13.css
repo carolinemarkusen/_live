@@ -202,7 +202,7 @@ a:hover{
     width: 47%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
   }
@@ -255,25 +255,31 @@ a:hover{
   height: auto;
 }
 
-@media only screen and (max-width: 1024px) {
-  .h1{
-    font-size: 25px;
-  }
-  .h2{
-    font-size: 25px;
-  }
-}
-
 .h2{
   font-family: essonnes-display, serif;
   font-weight: 500;
-  font-size: 27px;
+  font-size: 25px;
   letter-spacing: .02em;
   line-height: 1.2em;
   color: #0d192d;
   text-align: left;
   width: 100%;
   height: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .h1{
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .h1{
+    font-size: 20px;
+  }
+  .h2{
+    font-size: 20px;
+  }
 }
 
 .link_header:hover{
@@ -401,6 +407,10 @@ link:hover{
   .info_container{
     padding: 0% 5%;
   }
+
+  .color{
+    padding-bottom: 10px;
+  }
 }
 
 .info{
@@ -420,13 +430,6 @@ link:hover{
   flex-wrap: wrap;
   width: 85%;
   right: 0;
-}
-
-@media only screen and (max-width: 500px){
-  .colorpalette{
-    flex-wrap: nowrap;
-    justify-content:
-  }
 }
 
 .color{
@@ -535,7 +538,15 @@ link:hover{
   }
 
   .image_container_row{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     padding: 0% 5%;
+  }
+
+  .project_image_row{
+    width: 100%;
   }
 
   .caption_container{
@@ -551,15 +562,6 @@ link:hover{
     padding-bottom: 5px;
   }
   .p1{
-    width: 100%;
-  }
-  .image_container_row{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .project_image_row{
     width: 100%;
   }
 }
